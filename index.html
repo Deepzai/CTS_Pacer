@@ -3,7 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>CTS Pacer | Crafted with Love</title>
+
+        <!-- imports -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
         <!-- meta -->
         <meta name="description" content="CTS Pacer app to help you pace yourself.">
         <meta name="author" content="No Author">
@@ -12,15 +16,28 @@
     </head>
 
     <body>
-        <label for="currentPercentage">Enter your current percentage: </label>
-        <input type="number" id="currentPercentage" name="currentPercentage">
-        <button class="btn btn-info" id="submitInfo">Submit</button>
+        <div class="output">
+            <label for="currentPercentage" id="input">Enter your current percentage: &nbsp;</label>
+            <input type="number" id="currentPercentage" name="currentPercentage" placeholder="0">
+            <button class="btn btn-secondary" id="submitInfo">Submit</button>
 
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/pacer.js"></script>
+            <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="js/pacer.js"></script>
+        </div>
 
-        <p>
-            <span id="output"></span>
-        </p>
+        <hr>
+
+        <div class="output output_div">
+            <span id="output_text"></span>
+        </div>
+
+        <div class="confirm_div">
+            <span id="confirm_text"></span>
+        </div>
+
+        <div class="post">
+            <span id="post_text"></span>
+        </div>
+
     </body>
 </html>
